@@ -1,12 +1,10 @@
 var btnEncriptar = document.getElementById("encriptador");
 var btnDesencriptar = document.getElementById("desencriptador");
-var advertenciaSinTexto = document.querySelector(".texto-pendiente");
 var textoPendienteContenedor = document.querySelector(".texto-pendiente-contenedor");
+var textoResultadoContenedor = document.querySelector(".texto-resultado-contenedor");
 var convertirTexto = document.querySelector(".convertir-texto");
 var textoConvertido = document.querySelector(".texto-convertido");
 var textoFinal = document.querySelector(".texto-final");
-var botonCopiar = document.querySelector(".btn-copy");
-var textoResultadoContenedor = document.querySelector(".texto-resultado-contenedor");
 
 eliminarContenedorTextoConvertido();
 
@@ -129,25 +127,17 @@ function btnCopy() {
 function mostrarContenedorTextoConvertido() {
   eliminarContenedorTextoPendiente();
   textoResultadoContenedor.classList.remove("ocultar");
-  // textoFinal.classList.remove("ocultar");
-  // botonCopiar.classList.remove("ocultar");
 }
 
 function eliminarContenedorTextoConvertido() {
   textoResultadoContenedor.classList.add("ocultar");
-  // textoFinal.classList.add("ocultar");
-  // botonCopiar.classList.add("ocultar");
 }
 
 function mostrarContenedorTextoPendiente() {
   eliminarContenedorTextoConvertido();
   textoPendienteContenedor.classList.remove("ocultar");
-  // muneco.classList.remove("ocultar");
-  // advertenciaSinTexto.classList.remove("ocultar");
 }
 
 function eliminarContenedorTextoPendiente() {
   textoPendienteContenedor.classList.add("ocultar");
-  // muneco.classList.add("ocultar");
-  // advertenciaSinTexto.classList.add("ocultar");
 }

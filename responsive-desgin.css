@@ -1,8 +1,16 @@
-@media (max-width: 768px) {  
+/* Tablet */
+@media (max-width: 1452px) {  
+  html , body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  } 
+  
   body {
     position: relative;
     width: 768px;
-    height: 1450px;
+    height: 1500px;
   }
   
   .logo-contenedor {
@@ -21,14 +29,9 @@
   .convertir-texto {
     position: absolute;
     width: 688px;
-    height: 48px;
+    height: 288px;
     left: 40px;
     top: 240px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
   }
 
   .instruccion {
@@ -51,12 +54,6 @@
   .botones-contenedor button {
     width: 332px;
     height: 67px;
-    background: #0A3871;
-    border-radius: 24px;
-    padding: 24px;
-    gap: 8px;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
   }
   
   #desencriptador {
@@ -86,13 +83,6 @@
     position: absolute;
     top: 32px;
     left: 32px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    text-align: center;
-    color: #343A40;
   }
 
   .solicitud-texto {
@@ -101,12 +91,6 @@
     position: absolute;
     top: 77px;
     left: 32px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
   }
 
   .texto-resultado-contenedor {
@@ -115,17 +99,6 @@
     height: 343px;
     left: 40px;
     top: 1001px;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-  }
-
-  .texto-final {
-    width: 624px;
-    height: 180px;
-    position: absolute;
-    top: 32px;
-    left: 32px;
   }
 
   .texto-convertido {
@@ -134,14 +107,7 @@
     position: absolute;
     top: 32px;
     left: 32px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    color: #495057;
   }
-  
 
   .btn-copy {
     width: 624px;
@@ -149,18 +115,129 @@
     position: absolute;
     top: 244px;
     left: 32px;
-    padding: 24px;
-    gap: 8px;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
   }
 
   .copyright {
     width: 688px;
     height: 20px;
     position: absolute;
-    top: 97%;
+    top: 95%;
     left: 32px;
-    text-align: center;
   } 
+}
+
+/* Celular */
+
+@media (max-width: 680px) {
+  body {
+    position: relative;
+    width: 375px;
+    height: 1840px;
+  }
+
+  .logo-contenedor {
+    position: absolute;
+    width: 375px;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .logo {
+    height: 48px;
+    width: 32px;
+    position: absolute;
+    left: 16px;
+    top: 24px;
+  }
+
+  .convertir-texto {
+    position: absolute;
+    width: 343px;
+    height: 624px;
+    left: 16px;
+    top: 152px;
+  }
+
+  .instruccion {
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 16px;
+    top: 840px;
+  }
+
+  .botones-contenedor {
+    position: absolute;
+    width: 343px;
+    height: 158px;
+    left: 16px;
+    top: 874px;
+  }
+
+  #encriptador, #desencriptador{
+    width: 343px;
+    height: 67px;
+  }
+
+  #desencriptador {
+    left: 0px;
+    top: 91px;
+  }
+
+  .texto-pendiente-contenedor {
+    position: absolute;
+    width: 327px;
+    height: 186px;
+    left: 24px;
+    top: 1065px;
+    gap: 32px;
+  }
+
+  .mensaje-noencontrado {
+    width: 263px;
+    height: 58px;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+  }
+
+  .solicitud-texto {
+    width: 263px;
+    height: 48px;
+    position: absolute;
+    top: 106px;
+  }
+
+  .texto-resultado-contenedor {
+    height: 595px;
+    width: 343px;
+    left: 16px;
+    top: 1096px;
+  }
+
+  .texto-convertido {
+    width: 279px;
+    height: 432px;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+  }
+  
+  .btn-copy {
+    width: 279px;
+    position: absolute;
+    left: 32px;
+    top: 496px;
+  }
+
+  .copyright {
+    width: 343px;
+    height: auto;
+    position: absolute;
+    top: 100%;
+    left: 16px;
+  }
 }

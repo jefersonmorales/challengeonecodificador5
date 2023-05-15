@@ -9,19 +9,19 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive-desgin.css">
-  
+  <link rel="stylesheet" href="static.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
   
 </head>
 
   <body>
     <header class="logo-contenedor">
-      <a href="index.html"><img src="imagenes/logo.png" alt="logo"></a>
+      <a href="index.html"><img class="logo" src="imagenes/logo.png" alt="logo"></a>
     </header>
     
     <section class="ingreso-contenedor">
       <textarea name="texto" class="convertir-texto" id="convertir-texto" placeholder="Ingrese el texto aquí"></textarea>
-
       <div class="instruccion">
         <img src="imagenes/advertencia.png" alt="advertencia_icon">
         <p>Solo letras minúsculas y sin acentos</p>
@@ -34,21 +34,15 @@
     </section>
 
     <section class="texto-pendiente-contenedor">
-    
       <img class="muneco" src="imagenes/muneco.png" alt="muneco">
-
       <p class="mensaje-noencontrado">Ningún mensaje fue encontrado</p>
       <p class="solicitud-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
-
     </section>
 
 
     <section class="texto-resultado-contenedor">
-
       <textarea name="texto-convertido" class="texto-convertido" id="texto-convertido" readonly></textarea>
-    
       <button onclick="btnCopy()" class="btn-copy" >Copiar</button>
-
     </section>
 
     <footer class="copyright">
