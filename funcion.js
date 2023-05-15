@@ -1,11 +1,12 @@
 var btnEncriptar = document.getElementById("encriptador");
 var btnDesencriptar = document.getElementById("desencriptador");
 var advertenciaSinTexto = document.querySelector(".texto-pendiente");
-var muneco = document.querySelector(".muneco");
+var textoPendienteContenedor = document.querySelector(".texto-pendiente-contenedor");
 var convertirTexto = document.querySelector(".convertir-texto");
 var textoConvertido = document.querySelector(".texto-convertido");
 var textoFinal = document.querySelector(".texto-final");
 var botonCopiar = document.querySelector(".btn-copy");
+var textoResultadoContenedor = document.querySelector(".texto-resultado-contenedor");
 
 eliminarContenedorTextoConvertido();
 
@@ -18,7 +19,8 @@ function validarTextoParaEncriptar() {
   cambiarMensaje = sinTextoParaConvertir()
   
   if (comprobacionClick == true && convertirTexto.value.length == 0 ) {
-    sinTextoParaConvertir()
+    textoResultadoContenedor.classList.add("ocultar")
+
   } else if (comprobacionClick == true && convertirTexto.value.length > 0 ) {
     encriptar()
   }
@@ -29,7 +31,7 @@ function validarTextoParaDesencriptar() {
   cambiarMensaje = sinTextoParaConvertir()
   
   if (comprobacionClick == true && convertirTexto.value.length == 0 ) {
-    sinTextoParaConvertir()
+    cambiarMensaje
   } else if (comprobacionClick == true && convertirTexto.value.length > 0 ) {
     desencriptar()
   }
@@ -43,6 +45,7 @@ function capturarTexto() {
 function sinTextoParaConvertir() {
   eliminarContenedorTextoConvertido()
   mostrarContenedorTextoPendiente()
+  
   return document.querySelector(".mensaje-noencontrado").innerHTML='No ha ingresado ningun texto';
 }
 
@@ -125,22 +128,26 @@ function btnCopy() {
 
 function mostrarContenedorTextoConvertido() {
   eliminarContenedorTextoPendiente();
-  textoFinal.classList.remove("ocultar");
-  botonCopiar.classList.remove("ocultar");
+  textoResultadoContenedor.classList.remove("ocultar");
+  // textoFinal.classList.remove("ocultar");
+  // botonCopiar.classList.remove("ocultar");
 }
 
 function eliminarContenedorTextoConvertido() {
-  textoFinal.classList.add("ocultar");
-  botonCopiar.classList.add("ocultar");
+  textoResultadoContenedor.classList.add("ocultar");
+  // textoFinal.classList.add("ocultar");
+  // botonCopiar.classList.add("ocultar");
 }
 
 function mostrarContenedorTextoPendiente() {
   eliminarContenedorTextoConvertido();
-  muneco.classList.remove("ocultar");
-  advertenciaSinTexto.classList.remove("ocultar");
+  textoPendienteContenedor.classList.remove("ocultar");
+  // muneco.classList.remove("ocultar");
+  // advertenciaSinTexto.classList.remove("ocultar");
 }
 
 function eliminarContenedorTextoPendiente() {
-  muneco.classList.add("ocultar");
-  advertenciaSinTexto.classList.add("ocultar");
+  textoPendienteContenedor.classList.add("ocultar");
+  // muneco.classList.add("ocultar");
+  // advertenciaSinTexto.classList.add("ocultar");
 }

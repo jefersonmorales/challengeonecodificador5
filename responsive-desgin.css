@@ -1,0 +1,166 @@
+@media (max-width: 768px) {  
+  body {
+    position: relative;
+    width: 768px;
+    height: 1450px;
+  }
+  
+  .logo-contenedor {
+    position: absolute;
+    width: 31px;
+    height: 48px;
+    left: 40px;
+    top: 73.42px;
+  }
+
+  .logo-contenedor img{
+    width: 31.09px;
+    height: 46.37px;    
+  }
+
+  .convertir-texto {
+    position: absolute;
+    width: 688px;
+    height: 48px;
+    left: 40px;
+    top: 240px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+  }
+
+  .instruccion {
+    width: 229px;
+    height: 18px;
+    position: absolute;
+    top: 836px;
+    left: 40px;
+  }
+
+  .botones-contenedor {
+    position: absolute;
+    width: 688px;
+    height: 67px;
+    left:   40px;
+    top: 870px;
+    gap: 24px;
+  }
+
+  .botones-contenedor button {
+    width: 332px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+  }
+  
+  #desencriptador {
+    position: absolute;
+    left: 356px;
+    width: 332px;
+    height: 67px;
+  }
+
+  .muneco {
+    display: none;
+  }
+
+  .texto-pendiente-contenedor {
+    position: absolute;
+    width: 688px;
+    height: 133px;
+    left: 40px;
+    top: 1001px;
+    padding: 32px 0;
+    gap: 32px;
+  }
+
+  .mensaje-noencontrado {
+    width: 624px;
+    height: 29px;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+  }
+
+  .solicitud-texto {
+    width: 624px;
+    height: 24px;
+    position: absolute;
+    top: 77px;
+    left: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  .texto-resultado-contenedor {
+    position: absolute;
+    width: 688px;
+    height: 343px;
+    left: 40px;
+    top: 1001px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+  }
+
+  .texto-final {
+    width: 624px;
+    height: 180px;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+  }
+
+  .texto-convertido {
+    width: 624px;
+    height: 180px;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #495057;
+  }
+  
+
+  .btn-copy {
+    width: 624px;
+    height: 67px;
+    position: absolute;
+    top: 244px;
+    left: 32px;
+    padding: 24px;
+    gap: 8px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+  }
+
+  .copyright {
+    width: 688px;
+    height: 20px;
+    position: absolute;
+    top: 97%;
+    left: 32px;
+    text-align: center;
+  } 
+}

@@ -8,6 +8,8 @@
   <title>Encriptador</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive-desgin.css">
+  
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
   
 </head>
@@ -18,9 +20,7 @@
     </header>
     
     <section class="ingreso-contenedor">
-      <div class="ingreso-texto">
-        <textarea name="texto" class="convertir-texto" id="convertir-texto" placeholder="Ingrese el texto aquí"></textarea>
-      </div>
+      <textarea name="texto" class="convertir-texto" id="convertir-texto" placeholder="Ingrese el texto aquí"></textarea>
 
       <div class="instruccion">
         <img src="imagenes/advertencia.png" alt="advertencia_icon">
@@ -33,21 +33,23 @@
       </div>
     </section>
 
-    <section class="texto-resultado-contenedor">
-    </section>
+    <section class="texto-pendiente-contenedor">
     
-    <img class="muneco" src="imagenes/muneco.png" alt="muneco">
+      <img class="muneco" src="imagenes/muneco.png" alt="muneco">
 
-    <div class="texto-pendiente">
-      <h1 class="mensaje-noencontrado">Ningún mensaje fue encontrado</h1>
-      <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-    </div>
+      <p class="mensaje-noencontrado">Ningún mensaje fue encontrado</p>
+      <p class="solicitud-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
 
-    <div class="texto-final">
+    </section>
+
+
+    <section class="texto-resultado-contenedor">
+
       <textarea name="texto-convertido" class="texto-convertido" id="texto-convertido" readonly></textarea>
-    </div>
+    
+      <button onclick="btnCopy()" class="btn-copy" >Copiar</button>
 
-    <button onclick="btnCopy()" class="btn-copy" >Copiar</button>
+    </section>
 
     <footer class="copyright">
       <p>&copy Copyright Encriptador & Desencriptador by Jeferson Morales - 2023</p>
