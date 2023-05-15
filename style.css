@@ -13,7 +13,10 @@ body {
   width: 1440px;
   height: 1024px;
   font-family: 'Inter';
+}
 
+button {
+  cursor: pointer;
 }
 
 .logo-contenedor {
